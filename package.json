@@ -15,5 +15,9 @@
     "notifications"
   ],
   "author": "Zeus Lalkaka",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "node-osx-notifier": "~0.1.0",
+    "tinyhook": "~0.1.1"
+  }
 }
