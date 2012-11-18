@@ -1,0 +1,19 @@
+{
+  "name": "seam-reciever",
+  "version": "0.0.0",
+  "description": "a osx notification reciever that listens for events over a TCP socket",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/distracteddev/seam-reciever.git"
+  },
+  "keywords": [
+    "osx",
+    "notifications"
+  ],
+  "author": "Zeus Lalkaka",
+  "license": "BSD"
+}
