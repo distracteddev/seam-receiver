@@ -14,11 +14,12 @@ master.listen(function(err) {
   }
 });
 
-delay = setTimeout(function() {
+delay = setInterval(function() {
+  var i = 0;
   for (var func in exports) {
-    console.log(func);
+    setTimeout(exports[func], 2000*++i);
   }
-}, 1000);
+}, 10000);
 
 
 exports.simulateDeploy = function () {
