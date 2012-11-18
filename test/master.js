@@ -15,7 +15,9 @@ master.listen(function(err) {
 });
 
 delay = setTimeout(function() {
-  console.log(exports);
+  for (var func in exports) {
+    console.log(func);
+  }
 }, 1000);
 
 
