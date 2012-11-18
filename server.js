@@ -14,7 +14,7 @@ var listener = new Hook(options);
 
 listener.connect(function(err) {
   if (err) {
-    throw err;
+    console.error(err);
   }
 });
 
