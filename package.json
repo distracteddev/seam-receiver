@@ -1,9 +1,10 @@
 {
   "name": "seam-reciever",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a osx notification reciever that listens for events over a TCP socket",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "mocha test"
   },
   "repository": {

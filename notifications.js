@@ -18,11 +18,10 @@ function Notification(payload) {
   this.title    = join(action.toUpperCase(), payload.name);
   this.subtitle = payload.url;
   //this.group    = ;
-  this.message  = payload.message;
-  this.url      = payload.url;
-  //this.activate = ;
-  //this.execute  = ;
-  //
+  this.message   = payload.message;
+  this.open      = payload.url;
+  this.activate  = payload.activate;
+  this.execute = payload.execute || payload.command;
 
   var alertLevel = 'info';
   if (type === 'fail' || type === 'pass') {
@@ -40,13 +39,11 @@ function Notification(payload) {
 
 Notification.prototype.send =
 function(callback) {
-  //console.log(this);
   this.request(function(err, res, data) {
     if (callback) {
       callback(err, data);
     }
   });
-  //request.get({body: this}
 };
 
 
